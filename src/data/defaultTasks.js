@@ -9,7 +9,7 @@ export const DEFAULT_TASKS = [
   // --- WATER SYSTEM ---
   {
     id: "task-water-strainer",
-    title: "Inspect Rainwater Tank Inlet Strainers & Clean Leaves",
+    title: "Inspect Rainwater Tank Inlet Strainers Across All 4 Tanks",
     category: "water",
     assetId: "asset-water-tanks",
     frequency: "monthly",
@@ -17,15 +17,15 @@ export const DEFAULT_TASKS = [
     dueDate: getRelativeDate(3), // Due in 3 days
     lastCompletedDate: getRelativeDate(-27),
     seasonalTiming: "all-year",
-    estimatedMinutes: 20,
+    estimatedMinutes: 25,
     difficulty: "easy",
     preferredTrade: "DIY",
     checklist: [
-      "Climb ladder safely to tank access hatches on dual 22,500L poly tanks",
-      "Remove stainless steel inlet leaf strainer baskets",
+      "Climb ladder safely to access hatches across all four 22,500L poly tanks",
+      "Remove stainless steel inlet leaf strainer baskets from each of the 4 tanks",
       "Empty accumulated spotted gum leaves and bark debris into compost bin",
-      "Rinse mesh thoroughly with garden hose",
-      "Inspect mosquito-proof mesh for tears or corrosion before reseating securely"
+      "Rinse mesh baskets thoroughly with garden hose",
+      "Inspect mosquito-proof mesh for tears or corrosion before reseating securely on each tank"
     ],
     notes: "Eucalyptus oils can taint rainwater taste if leaf litter decays in the strainer basket."
   },
@@ -52,28 +52,46 @@ export const DEFAULT_TASKS = [
     notes: "Plumbed by Tony Good Plumbing (INV-1561). Purge after major coastal rain events or dry windy spells."
   },
   {
-    id: "task-water-filters",
-    title: "Whole-House Sediment & Carbon Filter Replacement",
+    id: "task-tank-balancing",
+    title: "Check 4-Tank Manifold Equalization & Balancing Valves",
     category: "water",
     assetId: "asset-water-tanks",
-    frequency: "biannual",
-    intervalMonths: 6,
+    frequency: "quarterly",
+    intervalMonths: 3,
     dueDate: getRelativeDate(25),
-    lastCompletedDate: getRelativeDate(-155),
+    lastCompletedDate: getRelativeDate(-65),
     seasonalTiming: "all-year",
-    estimatedMinutes: 45,
-    difficulty: "moderate",
+    estimatedMinutes: 20,
+    difficulty: "easy",
     preferredTrade: "DIY / Anthony Good Plumbing",
     checklist: [
-      "Turn off power to household pressure pump and isolate main supply valve",
-      "Open nearest cold garden tap to relieve line pressure",
-      "Use filter housing spanner wrench to unscrew Stage 1 (20µm) and Stage 2 (5µm) 20\" jumbo bowls",
-      "Wash inside of filter housings with clean water and mild soap",
-      "Inspect black rubber O-rings; apply food-grade silicone grease",
-      "Insert new 20\" x 4.5\" jumbo replacement cartridges (pleated 20µm + carbon block 5µm)",
-      "Screw bowls on hand-tight, restore water supply slowly, and bleed air purge valve until water flows clear"
+      "Check bottom manifold isolation valves connecting all four 22,500L tanks are fully open",
+      "Visually confirm water levels are equalizing evenly across all 4 tanks (90,000L total capacity)",
+      "Inspect manifold pipe joins, ball valves, and flexible tank connectors for drips or ground settling movement",
+      "Check overflow outlets on tanks 1 to 4 are clear of wasp nests or obstructions"
     ],
-    notes: "Replacement filters: 20\" x 4.5\" Jumbo Pleated 20 Micron + Carbon Block 5 Micron. Can contact Tony Good Plumbing if needed."
+    notes: "Ensures equal water distribution across all four 22,500L tanks. Keep all bottom valves open during normal operation."
+  },
+  {
+    id: "task-plan-filtration",
+    title: "Plan & Install Whole-House Water Filtration System (Project)",
+    category: "water",
+    assetId: "asset-water-tanks",
+    frequency: "annual",
+    intervalMonths: 12,
+    dueDate: getRelativeDate(90),
+    lastCompletedDate: "",
+    seasonalTiming: "all-year",
+    estimatedMinutes: 60,
+    difficulty: "professional",
+    preferredTrade: "Anthony Good Plumbing (Tony Good, Moruya)",
+    checklist: [
+      "Consult Tony Good Plumbing regarding optimal pressure pump filtration setup",
+      "Select dual 20\" jumbo housings (20µm pleated pre-filter + 5µm carbon/polyspun)",
+      "Evaluate UV disinfection system requirement (45-55 LPM) for potable rainwater",
+      "Confirm power availability at tank pad and install weatherproof filtration enclosure"
+    ],
+    notes: "Currently no in-line filtration installed on the four 22,500L tanks. Planned improvement with Tony Good Plumbing."
   },
   {
     id: "task-pressure-pump-check",

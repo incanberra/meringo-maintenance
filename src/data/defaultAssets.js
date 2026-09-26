@@ -1,22 +1,23 @@
 export const DEFAULT_ASSETS = [
   {
     id: "asset-water-tanks",
-    name: "Rainwater Tanks & Pressure Pump",
+    name: "Rainwater Tanks (4x 22,500L) & Pressure Pump",
     category: "water",
     location: "House Perimeter / Tank Pad",
-    makeModel: "Poly 22,500L Tank(s) + Davey / Grundfos Pressure Pump",
+    makeModel: "Four Poly 22,500L Tanks (90,000L Total Capacity) + Pressure Pump",
     serialNumber: "PMP-84920-X",
     installationDate: "2026-04-28",
-    warrantyExpiry: "2031-04-28",
+    warrantyExpiry: "2036-04-28",
     manualUrl: "",
     specs: {
-      "Capacity": "Dual 22,500L Tanks (45,000L Total Capacity)",
+      "Capacity": "4x 22,500L Poly Tanks (90,000L Total Storage)",
+      "Filtration": "None installed yet (Direct tank-to-pump supply)",
       "Plumbing Contractor": "Anthony Good Plumbing (Tony Good, Moruya)",
+      "Equalization": "Bottom manifold balancing valves between all 4 tanks",
       "Pump Type": "Constant Pressure Variable Speed Pump with Controller",
-      "Filtration": "Dual Jumbo 20\" Housings (20µm Pleated + 5µm Carbon/Sediment)",
       "First Flush": "Dual downpipe first-flush diverters connected to pit"
     },
-    notes: "Connected and plumbed by Tony Good Plumbing (Invoices INV-1541 & INV-1561). Ensure first flush is drained after heavy coastal rain."
+    notes: "Four interconnected 22,500L poly tanks (90,000L total capacity) plumbed by Tony Good Plumbing (Invoices INV-1541 & INV-1561). Currently operating without in-line filtration. Check inlet leaf strainers across all four tanks and ensure bottom balancing valves remain open."
   },
   {
     id: "asset-awts",

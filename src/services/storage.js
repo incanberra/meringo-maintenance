@@ -4,10 +4,10 @@ import { DEFAULT_CONTACTS } from '../data/defaultContacts.js';
 import { calculateNextDueDate } from './dateUtils.js';
 
 const STORAGE_KEYS = {
-  ASSETS: 'meringo_assets_v2',
-  TASKS: 'meringo_tasks_v2',
-  LOGS: 'meringo_logs_v2',
-  CONTACTS: 'meringo_contacts_v2',
+  ASSETS: 'meringo_assets_v3',
+  TASKS: 'meringo_tasks_v3',
+  LOGS: 'meringo_logs_v3',
+  CONTACTS: 'meringo_contacts_v3',
   SETTINGS: 'meringo_settings_v1',
 };
 
@@ -24,13 +24,13 @@ const DEFAULT_LOGS = [
   {
     id: "log-seed-1",
     taskId: "task-water-strainer",
-    taskTitle: "Inspect Rainwater Tank Inlet Strainers & Clean Leaves",
+    taskTitle: "Inspect Rainwater Tank Inlet Strainers Across All 4 Tanks",
     assetId: "asset-water-tanks",
     completedDate: new Date(Date.now() - 27 * 86400000).toISOString().split('T')[0],
     completedBy: "Self",
     cost: 0,
-    durationMinutes: 20,
-    notes: "Cleared gum leaves from both 22,500L poly tank baskets. Mesh in excellent condition.",
+    durationMinutes: 25,
+    notes: "Cleared gum leaves and bark debris from all four 22,500L poly tank leaf baskets. Total 90,000L storage in good order.",
     nextDueDate: new Date(Date.now() + 3 * 86400000).toISOString().split('T')[0]
   },
   {
@@ -72,13 +72,13 @@ const DEFAULT_LOGS = [
   {
     id: "log-seed-5",
     taskId: "task-first-flush",
-    taskTitle: "Connect Water Tanks, First Flush & Pit (Tony Good Plumbing)",
+    taskTitle: "Connect 4x Water Tanks, First Flush & Pit (Tony Good Plumbing)",
     assetId: "asset-water-tanks",
     completedDate: "2026-04-28",
     completedBy: "Anthony Good Plumbing",
     cost: 2134,
     durationMinutes: 240,
-    notes: "Tony Good Plumbing (INV-1561) completed connection of dual rainwater tanks, downpipe first-flush diverters, and overflow drainage pit.",
+    notes: "Tony Good Plumbing (INV-1561) completed connection of four 22,500L rainwater tanks (90,000L total capacity), downpipe first-flush diverters, and overflow drainage pit.",
     nextDueDate: new Date(Date.now() + 12 * 86400000).toISOString().split('T')[0]
   }
 ];
