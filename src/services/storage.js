@@ -4,10 +4,10 @@ import { DEFAULT_CONTACTS } from '../data/defaultContacts.js';
 import { calculateNextDueDate } from './dateUtils.js';
 
 const STORAGE_KEYS = {
-  ASSETS: 'meringo_assets_v1',
-  TASKS: 'meringo_tasks_v1',
-  LOGS: 'meringo_logs_v1',
-  CONTACTS: 'meringo_contacts_v1',
+  ASSETS: 'meringo_assets_v2',
+  TASKS: 'meringo_tasks_v2',
+  LOGS: 'meringo_logs_v2',
+  CONTACTS: 'meringo_contacts_v2',
   SETTINGS: 'meringo_settings_v1',
 };
 
@@ -19,7 +19,7 @@ function emitChange() {
   }
 }
 
-// Initial mock logs to show history
+// Initial realistic logs based on verified property records
 const DEFAULT_LOGS = [
   {
     id: "log-seed-1",
@@ -30,19 +30,19 @@ const DEFAULT_LOGS = [
     completedBy: "Self",
     cost: 0,
     durationMinutes: 20,
-    notes: "Cleared a handful of spotted gum leaves from both tank baskets. Mesh in excellent condition.",
+    notes: "Cleared gum leaves from both 22,500L poly tank baskets. Mesh in excellent condition.",
     nextDueDate: new Date(Date.now() + 3 * 86400000).toISOString().split('T')[0]
   },
   {
     id: "log-seed-2",
     taskId: "task-awts-quarterly-service",
-    taskTitle: "AWTS Quarterly Certified Compliance Service",
+    taskTitle: "AWTS Quarterly Compliance Service (BluenGrey)",
     assetId: "asset-awts",
     completedDate: new Date(Date.now() - 72 * 86400000).toISOString().split('T')[0],
-    completedBy: "South Coast Wastewater",
-    cost: 110,
+    completedBy: "BluenGrey Water & Septic Solutions",
+    cost: 125,
     durationMinutes: 45,
-    notes: "Quarterly inspection passed. Residual chlorine 1.2 ppm. Blower running smooth. Certificate sent to Council.",
+    notes: "BluenGrey technician attended 1137 Congo Rd. Blower motor inspected, dissolved oxygen normal, chlorine tablets replenished. Quarterly compliance certificate submitted to Eurobodalla Shire Council.",
     nextDueDate: new Date(Date.now() + 18 * 86400000).toISOString().split('T')[0]
   },
   {
@@ -54,8 +54,32 @@ const DEFAULT_LOGS = [
     completedBy: "Self",
     cost: 0,
     durationMinutes: 15,
-    notes: "Started on second pull. Tested 25mm fire nozzle on jet and fog patterns. Re-topped fuel tank.",
+    notes: "Honda GX160 started on 2nd pull. Ran 10 minutes under pressure testing 25mm fire nozzle. Re-topped fuel tank.",
     nextDueDate: new Date(Date.now() + 1 * 86400000).toISOString().split('T')[0]
+  },
+  {
+    id: "log-seed-4",
+    taskId: "task-termite-inspection",
+    taskTitle: "Annual Professional Pest & Termite Barrier Inspection (Bates Pest Control)",
+    assetId: "asset-pest-barrier",
+    completedDate: new Date(Date.now() - 120 * 86400000).toISOString().split('T')[0],
+    completedBy: "Bates Pest Control",
+    cost: 154,
+    durationMinutes: 60,
+    notes: "Myrle Payne from Bates Pest Control attended 1137 Congo Rd (Job 02168). Inspected roof void, placed rodent bait stations in garage and roof, inspected ant capping. AS 3660 report issued.",
+    nextDueDate: new Date(Date.now() + 60 * 86400000).toISOString().split('T')[0]
+  },
+  {
+    id: "log-seed-5",
+    taskId: "task-first-flush",
+    taskTitle: "Connect Water Tanks, First Flush & Pit (Tony Good Plumbing)",
+    assetId: "asset-water-tanks",
+    completedDate: "2026-04-28",
+    completedBy: "Anthony Good Plumbing",
+    cost: 2134,
+    durationMinutes: 240,
+    notes: "Tony Good Plumbing (INV-1561) completed connection of dual rainwater tanks, downpipe first-flush diverters, and overflow drainage pit.",
+    nextDueDate: new Date(Date.now() + 12 * 86400000).toISOString().split('T')[0]
   }
 ];
 
@@ -276,8 +300,8 @@ export const storage = {
   // --- BACKUP & RESTORE ---
   exportAllDataJSON() {
     const data = {
-      version: "1.0",
-      property: "2-Acre Coastal Homestead, Meringo NSW",
+      version: "2.0",
+      property: "1137 Congo Road, Meringo NSW",
       exportedAt: new Date().toISOString(),
       assets: this.getAssets(),
       tasks: this.getTasks(),

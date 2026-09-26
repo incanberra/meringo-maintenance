@@ -21,13 +21,13 @@ export const DEFAULT_TASKS = [
     difficulty: "easy",
     preferredTrade: "DIY",
     checklist: [
-      "Climb ladder safely to tank access hatch",
-      "Remove stainless steel inlet leaf basket from each tank",
-      "Empty accumulated eucalyptus leaves and debris into garden bin",
-      "Rinse mesh thoroughly with hose water",
+      "Climb ladder safely to tank access hatches on dual 22,500L poly tanks",
+      "Remove stainless steel inlet leaf strainer baskets",
+      "Empty accumulated spotted gum leaves and bark debris into compost bin",
+      "Rinse mesh thoroughly with garden hose",
       "Inspect mosquito-proof mesh for tears or corrosion before reseating securely"
     ],
-    notes: "Eucalyptus oils can taint rainwater taste if leaves decay in the strainer basket."
+    notes: "Eucalyptus oils can taint rainwater taste if leaf litter decays in the strainer basket."
   },
   {
     id: "task-first-flush",
@@ -41,15 +41,15 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 30,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Anthony Good Plumbing",
     checklist: [
-      "Locate the bottom screw-caps on each downpipe first-flush diverter pipe",
-      "Unscrew caps slowly and discharge settled silt and muddy water into a bucket or garden",
-      "Remove the internal floating sealing ball and wash away any grime",
-      "Inspect the flow control washer / trickle outlet nozzle for blockages",
-      "Screw caps back on securely (hand tight with silicone grease if needed)"
+      "Locate the bottom screw-caps on downpipe first-flush diverters (installed by Tony Good)",
+      "Unscrew caps slowly and discharge settled silt and muddy water into bucket",
+      "Remove internal floating sealing ball and wash away any grime",
+      "Inspect flow control washer / trickle outlet nozzle for blockages",
+      "Screw caps back on securely with silicone grease if needed"
     ],
-    notes: "Clean after major coastal rain events or dry windy spells."
+    notes: "Plumbed by Tony Good Plumbing (INV-1561). Purge after major coastal rain events or dry windy spells."
   },
   {
     id: "task-water-filters",
@@ -63,17 +63,17 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 45,
     difficulty: "moderate",
-    preferredTrade: "DIY / Plumber",
+    preferredTrade: "DIY / Anthony Good Plumbing",
     checklist: [
-      "Turn off the power to the pressure pump and shut the main water supply valve",
+      "Turn off power to household pressure pump and isolate main supply valve",
       "Open nearest cold garden tap to relieve line pressure",
-      "Use filter housing spanner wrench to unscrew Stage 1 (20µm) and Stage 2 (5µm) filter bowls",
-      "Wash inside of filter housings with clean water and dilute food-grade hydrogen peroxide / mild soap",
-      "Inspect black rubber O-rings, apply food-grade silicone lube",
-      "Insert new 20\" jumbo replacement filter cartridges in correct direction",
-      "Screw housings on tight by hand, turn water back on slowly, and bleed air purge valve until water flows smoothly"
+      "Use filter housing spanner wrench to unscrew Stage 1 (20µm) and Stage 2 (5µm) 20\" jumbo bowls",
+      "Wash inside of filter housings with clean water and mild soap",
+      "Inspect black rubber O-rings; apply food-grade silicone grease",
+      "Insert new 20\" x 4.5\" jumbo replacement cartridges (pleated 20µm + carbon block 5µm)",
+      "Screw bowls on hand-tight, restore water supply slowly, and bleed air purge valve until water flows clear"
     ],
-    notes: "Replacement filters: 20\" x 4.5\" Jumbo Pleated 20 Micron + Carbon Block 5 Micron."
+    notes: "Replacement filters: 20\" x 4.5\" Jumbo Pleated 20 Micron + Carbon Block 5 Micron. Can contact Tony Good Plumbing if needed."
   },
   {
     id: "task-pressure-pump-check",
@@ -87,20 +87,20 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 20,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Anthony Good Plumbing",
     checklist: [
       "Inspect pump housing, unions and isolation valves for weeping or leaks",
       "Listen for unusual bearing noise or rapid cycling when taps are turned off",
-      "Check Torrium / electronic pressure controller LED status indicators (green healthy)",
+      "Check electronic pressure controller status indicators (green healthy)",
       "Ensure weatherproof pump cover is well ventilated and free of spider webs/wasp nests"
     ],
-    notes: "Keep spare Torrium controller or pump capacitor in shed for emergency."
+    notes: "Tony Good Plumbing is the primary local contact for pump issues or replacements."
   },
 
   // --- WASTEWATER (AWTS) ---
   {
     id: "task-awts-quarterly-service",
-    title: "AWTS Quarterly Certified Compliance Service",
+    title: "AWTS Quarterly Compliance Service (BluenGrey)",
     category: "wastewater",
     assetId: "asset-awts",
     frequency: "quarterly",
@@ -108,21 +108,22 @@ export const DEFAULT_TASKS = [
     dueDate: getRelativeDate(18),
     lastCompletedDate: getRelativeDate(-72),
     seasonalTiming: "all-year",
-    estimatedMinutes: 60,
+    estimatedMinutes: 45,
     difficulty: "professional",
-    preferredTrade: "Taylex / Fuji Clean Certified Technician (South Coast)",
+    preferredTrade: "BluenGrey Water & Septic Solutions (1300 764 558)",
     checklist: [
-      "Licensed technician inspects aeration blower motor and air filters",
-      "Test dissolved oxygen levels and sludge blanket depth in clarifier",
+      "BluenGrey technician inspects aeration blower motor, compressor, and air filters",
+      "Test dissolved oxygen levels and sludge blanket depth in clarifier chamber",
       "Check submersible irrigation pump amp draw and float switch operation",
       "Test effluent residual chlorine ppm and clarity",
-      "Technician submits quarterly compliance report to Eurobodalla Shire Council"
+      "Replenish slow-dissolving Calcium Hypochlorite tablets in dispenser tube",
+      "BluenGrey submits quarterly compliance report directly to Eurobodalla Shire Council"
     ],
-    notes: "Ensure technician emails a copy of the Council Service Report for home records."
+    notes: "Maintained under scheduled contract by BluenGrey Water & Septic Solutions (10 Page St Moruya, 1300 764 558). Standard quarterly fee ~$125 AUD. Council copy emailed automatically."
   },
   {
     id: "task-awts-chlorine-dispenser",
-    title: "AWTS Chlorine Disinfection Tablet Check",
+    title: "AWTS Chlorine Tablet Dispenser Interim Check",
     category: "wastewater",
     assetId: "asset-awts",
     frequency: "monthly",
@@ -132,15 +133,15 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 15,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / BluenGrey",
     checklist: [
       "Wear protective gloves and safety glasses",
-      "Open disinfection chamber access lid carefully (avoid inhaling gas)",
+      "Open disinfection chamber access lid carefully (avoid inhaling vapour)",
       "Inspect chlorine tablet dispenser feeder tube",
-      "Replenish with 2-3 approved slow-dissolving Calcium Hypochlorite tablets if depleted",
-      "Ensure tablets slide down tube freely to make contact with treated water flow"
+      "Confirm approved Calcium Hypochlorite tablets are present and contacting treated effluent flow",
+      "Add 1-2 BluenGrey supplied tablets if tube is nearly empty"
     ],
-    notes: "Only use Calcium Hypochlorite tablets approved for AWTS. NEVER use swimming pool trichlor tablets!"
+    notes: "Only use Calcium Hypochlorite tablets supplied/approved by BluenGrey. NEVER use swimming pool trichlor tablets!"
   },
   {
     id: "task-awts-irrigation-walk",
@@ -156,12 +157,12 @@ export const DEFAULT_TASKS = [
     difficulty: "easy",
     preferredTrade: "DIY",
     checklist: [
-      "Walk the designated effluent disposal area in lower acreage",
+      "Walk the designated effluent disposal area in lower acreage paddock",
       "Check for surface pooling, excessive boggy ground or foul odours",
       "Inspect purple reclaimed-water warning signs along boundary fence line",
       "Clear any overgrown grass or blackberry encroaching on spray/drip heads"
     ],
-    notes: "Council requires irrigation zone to remain signposted and free of grazing livestock."
+    notes: "Eurobodalla Shire Council requires irrigation zone to remain signposted and free of grazing livestock."
   },
 
   // --- BUSHFIRE READINESS & DEFENCE ---
@@ -177,18 +178,18 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 25,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Moruya Mowers",
     checklist: [
-      "Check engine oil dipstick (level must be between marks, clean amber color)",
-      "Check petrol level; ensure fresh fuel with stabilizer",
+      "Check Honda GX160 engine oil dipstick (level must be between marks, clean amber color)",
+      "Check petrol level; ensure fresh unleaded fuel with stabilizer",
       "Open suction valve to rainwater tank supply",
-      "Connect delivery fire hose with closed nozzle",
+      "Connect delivery fire hose with closed brass nozzle",
       "Turn on fuel tap, set choke, set throttle to 1/3, switch ignition ON",
       "Pull start cord; once running smoothly, open choke and run for 5-10 minutes under pressure",
       "Test fire nozzle spray pattern (jet and wide fog)",
       "Shut down engine with kill switch, close fuel petcock, and top up tank with fresh petrol"
     ],
-    notes: "Meringo bushfire safety requirement. Fuel should be cycled and refreshed every 6 months."
+    notes: "Meringo bushfire safety requirement. Spare spark plugs and oil available at Moruya Mowers. Turnover fuel every 6 months."
   },
   {
     id: "task-fire-hoses-storz",
@@ -210,7 +211,7 @@ export const DEFAULT_TASKS = [
       "Test brass fire nozzles for smooth rotation between solid stream, fog, and shut-off",
       "Drain water completely, roll tightly (female coupling outside), and store in UV-protected locker"
     ],
-    notes: "Keep fittings matching RFS standard (65mm Storz to 25mm / 38mm hose)."
+    notes: "Fittings conform to NSW RFS standard (65mm Storz to 25mm delivery)."
   },
   {
     id: "task-apz-slashing",
@@ -224,9 +225,9 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "spring",
     estimatedMinutes: 180,
     difficulty: "moderate",
-    preferredTrade: "DIY / Tractor Slasher",
+    preferredTrade: "DIY",
     checklist: [
-      "Slash grass within 20-30m of house to under 100mm height",
+      "Slash grass within 20-30m of house to under 100mm height using ride-on mower",
       "Rake and remove dried grass clippings and accumulated bark away from foundations",
       "Prune low-hanging tree branches under 2 metres from ground level (prevent flame laddering)",
       "Clear 5-metre zone around gas bottles, pump house, and woodpile"
@@ -245,7 +246,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 60,
     difficulty: "moderate",
-    preferredTrade: "DIY / Gutter Cleaning Service",
+    preferredTrade: "DIY",
     checklist: [
       "Inspect roof valleys and gutters with sturdy ladder and fall arrest gear",
       "Blow or brush all dry eucalyptus leaves, gum nuts and pine needles off roof",
@@ -271,13 +272,13 @@ export const DEFAULT_TASKS = [
     preferredTrade: "DIY / Professional Chimney Sweep",
     checklist: [
       "Seal firebox opening with plastic sheeting and duct tape to contain soot",
-      "Climb roof to remove chimney cowl / bird guard",
+      "Climb roof to inspect cowl and bird guard",
       "Pass wire chimney brush down the stainless steel flue from top to bottom 3-4 times",
       "Check flue cowl for creosote buildup or damaged spark arrestor mesh",
       "Vacuum soot from firebox baffle plate and hearth",
       "Inspect firebricks for cracks and replace if crumbling"
     ],
-    notes: "Annual sweep prevents dangerous chimney flue fires and improves winter heating efficiency."
+    notes: "Fireplace installed by Michael Smith (MJ Smith Carpentry). Annual sweep prevents flue fires and improves heating efficiency."
   },
   {
     id: "task-wood-door-rope",
@@ -313,7 +314,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 30,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / South Coast Heating & Cooling",
     checklist: [
       "Pop open front grille of living room and bedroom indoor split units",
       "Slide out mesh dust filter screens",
@@ -321,7 +322,7 @@ export const DEFAULT_TASKS = [
       "Allow filters to air dry completely in shade before reinstalling",
       "Wipe indoor louvres and wipe dust sensor"
     ],
-    notes: "Clean filters reduce power consumption by up to 15% and prevent dust mites."
+    notes: "Servicing supported by South Coast Heating and Cooling (Moruya, INV-0472)."
   },
   {
     id: "task-ac-outdoor-coils",
@@ -357,15 +358,15 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 10,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / O'Brien Plumbing",
     checklist: [
-      "Locate the brass Pressure Temperature Relief (PTR) valve near top of hot water cylinder",
+      "Locate brass Pressure Temperature Relief (PTR) valve near top of hot water cylinder",
       "Stand clear of the drain line outlet (water will be scalding hot)",
-      "Gently lift the test lever for 5 seconds until hot water discharges freely through drain pipe",
-      "Release the lever smoothly and confirm water stops flowing completely",
-      "If valve drips continuously after release, contact a plumber for valve replacement"
+      "Gently lift test lever for 5 seconds until hot water discharges freely through drain pipe",
+      "Release lever smoothly and confirm water stops flowing completely",
+      "If valve drips continuously after release, contact O'Brien Plumbing (02 4472 8415) for replacement"
     ],
-    notes: "Prevents pressure buildup in cylinder. Australian Standard AS 3500 recommends 6-monthly test."
+    notes: "Hot water system installed by O'Brien Plumbing Batemans Bay (Quote 23498 / Invoice 38994)."
   },
   {
     id: "task-heatpump-fins-clean",
@@ -383,11 +384,11 @@ export const DEFAULT_TASKS = [
     checklist: [
       "Switch off electrical isolator switch on heat pump unit before cleaning",
       "Inspect rear evaporator coil fins for leaf debris, cobwebs, or dirt",
-      "Use a soft nylon brush or vacuum with brush attachment to gently clear debris (do not bend delicate fins)",
+      "Use soft nylon brush or vacuum with brush attachment to gently clear debris (do not bend delicate fins)",
       "Check condensate drain tray and drain hose for blockages",
       "Turn isolator switch back ON and verify quiet fan startup"
     ],
-    notes: "Maintains optimal coefficient of performance (COP) especially in cool winter temperatures."
+    notes: "Maintains optimal coefficient of performance (COP) during cool winter months."
   },
 
   // --- MACHINERY & GROUNDS ---
@@ -403,7 +404,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "spring",
     estimatedMinutes: 60,
     difficulty: "moderate",
-    preferredTrade: "DIY / Small Engine Mechanic",
+    preferredTrade: "DIY / Moruya Mowers",
     checklist: [
       "Run mower engine for 3 minutes to warm oil for easier draining",
       "Place drain pan under engine drain hose, unclip plug, and drain warm oil completely",
@@ -412,7 +413,7 @@ export const DEFAULT_TASKS = [
       "Remove air filter cartridge; tap out loose dust or replace paper element",
       "Check tire pressures: Front 14 PSI, Rear 10 PSI"
     ],
-    notes: "Eurobodalla small engine mechanics recommend servicing every 50 operating hours or 6 months."
+    notes: "Moruya Mowers on Princes Hwy stocks Husqvarna & Briggs & Stratton service kits."
   },
   {
     id: "task-mower-deck-blades",
@@ -426,7 +427,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 60,
     difficulty: "moderate",
-    preferredTrade: "DIY / Mechanic",
+    preferredTrade: "DIY / Moruya Mowers",
     checklist: [
       "Disconnect spark plug lead for safety before touching cutting deck",
       "Use deck wash port or jack front of mower onto solid stands",
@@ -448,7 +449,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 45,
     difficulty: "moderate",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Moruya Mowers",
     checklist: [
       "Sharpen chainsaw cutters with round 4.8mm file at 30-degree angle",
       "Flip guide bar upside down to ensure even groove wear, and clean bar rail groove",
@@ -456,7 +457,7 @@ export const DEFAULT_TASKS = [
       "Reload brushcutter line head with 2.7mm commercial grade round line",
       "Clean spark arrestor screen in muffler with wire brush"
     ],
-    notes: "Never use old or cloudy 2-stroke fuel; fresh fuel protects small 2-stroke carburettors."
+    notes: "Never use stale 2-stroke fuel; mix fresh 50:1 with Stihl HP Ultra synthetic oil."
   },
 
   // --- HOUSE & DECKS ---
@@ -472,36 +473,37 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "autumn",
     estimatedMinutes: 240,
     difficulty: "moderate",
-    preferredTrade: "DIY / Painter",
+    preferredTrade: "DIY / M J Smith Carpentry",
     checklist: [
-      "Move all outdoor furniture and BBQ off timber decks",
-      "Clean decking boards with sodium percarbonate / deck cleaner to remove dirt, mildew, and salt residue",
+      "Move outdoor furniture and BBQ off timber decks",
+      "Clean decking boards with sodium percarbonate / deck cleaner to remove dirt and coastal salt residue",
       "Allow 48 hours for timber to dry thoroughly",
       "Apply 1-2 generous coats of penetrating decking oil (e.g. Cutek CD50 or Intergrain) with lamb's wool applicator",
       "Wipe off any excess unabsorbed oil after 30 minutes to prevent tacky finish"
     ],
-    notes: "Vital in Meringo's coastal environment to prevent grey UV bleaching and wood splitting."
+    notes: "Spotted gum deck built by Michael Smith (MJ Smith Carpentry). Annual re-oiling protects timber against coastal UV and salt spray."
   },
   {
     id: "task-termite-inspection",
-    title: "Annual Professional Pest & Termite Barrier Inspection",
+    title: "Annual Professional Pest & Termite Barrier Inspection (Bates Pest Control)",
     category: "house",
-    assetId: "asset-decks-verandas",
+    assetId: "asset-pest-barrier",
     frequency: "annual",
     intervalMonths: 12,
     dueDate: getRelativeDate(60),
     lastCompletedDate: getRelativeDate(-305),
     seasonalTiming: "all-year",
-    estimatedMinutes: 90,
+    estimatedMinutes: 60,
     difficulty: "professional",
-    preferredTrade: "Eurobodalla Pest Control / Licensed Inspector",
+    preferredTrade: "Bates Pest Control (Myrle Payne, 0428 711 701)",
     checklist: [
-      "Licensed pest inspector examines subfloor, perimeter weepholes, and ant capping",
-      "Inspect roof void with thermal imaging / moisture meter for termite activity",
-      "Check external garden mulch, timber sleepers, and boundary tree stumps within 50m of dwelling",
-      "Receive written Australian Standard AS 3660.2 Timber Pest Inspection Report"
+      "Myrle Payne (Bates Pest Control) examines subfloor, perimeter weepholes, and ant capping",
+      "Inspect roof void for pest/termite activity (Job 02168)",
+      "Check and replenish rodent bait stations in garage and roof",
+      "Inspect boundary trees and garden sleepers within 50m of dwelling",
+      "Receive written AS 3660.2 Timber Pest Inspection Report for home insurance"
     ],
-    notes: "High eucalyptus forest area has high subterranean termite pressure (Coptotermes acinaciformis)."
+    notes: "Bates Pest Control (78 Edward Rd Batehaven, 0428 711 701 / 4471 1701). Local accredited inspector."
   },
   {
     id: "task-coastal-salt-washdown",
@@ -537,14 +539,14 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "spring",
     estimatedMinutes: 90,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Moruya Ag",
     checklist: [
-      "Feed citrus and deciduous trees with pelletized organic poultry manure and trace elements",
+      "Feed citrus and deciduous trees with pelletized organic poultry manure and trace elements (from Moruya Ag)",
       "Hang fresh Queensland Fruit Fly (Qfly) pheromone lures in lemon, lime, and stone fruit trees",
       "Inspect drip irrigation line emitters; run manual 10-minute test cycle",
       "Top up compost / sugarcane mulch around drip-line (keep 10cm clear of tree trunks)"
     ],
-    notes: "Hang fruit fly traps by early spring before fruit develops colour to break breeding cycle."
+    notes: "Supplies from Moruya Ag Horse & Pet (Vulcan St Moruya). Hang traps by early spring before fruit develops colour."
   },
   {
     id: "task-chicken-coop-clean",
@@ -558,14 +560,14 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 45,
     difficulty: "easy",
-    preferredTrade: "DIY",
+    preferredTrade: "DIY / Moruya Ag",
     checklist: [
       "Shovel out soiled straw/bedding directly to vegetable garden compost heap",
       "Sprinkle diatomaceous earth on roosting perches and nesting boxes for mite prevention",
-      "Add fresh sweet-smelling pine shavings or clean straw to nest boxes",
+      "Add fresh pine shavings or clean straw (from Moruya Ag) to nest boxes",
       "Inspect exterior predator wire skirt around coop perimeter for fox digging signs",
       "Test automatic light-sensor door battery and ensure smooth sliding track"
     ],
-    notes: "Foxes are active along the Meringo coastal headland bush."
+    notes: "Feed and pine shavings sourced from Moruya Ag Horse & Pet. Foxes are active in the coastal bush."
   }
 ];

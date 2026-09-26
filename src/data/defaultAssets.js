@@ -6,41 +6,44 @@ export const DEFAULT_ASSETS = [
     location: "House Perimeter / Tank Pad",
     makeModel: "Poly 22,500L Tank(s) + Davey / Grundfos Pressure Pump",
     serialNumber: "PMP-84920-X",
-    installationDate: "2024-03-15",
-    warrantyExpiry: "2029-03-15",
+    installationDate: "2026-04-28",
+    warrantyExpiry: "2031-04-28",
     manualUrl: "",
     specs: {
-      "Capacity": "Dual 22,500L Tanks (45,000L Total)",
-      "Pump Type": "Variable Speed Constant Pressure Pump with Torrium Controller",
+      "Capacity": "Dual 22,500L Tanks (45,000L Total Capacity)",
+      "Plumbing Contractor": "Anthony Good Plumbing (Tony Good, Moruya)",
+      "Pump Type": "Constant Pressure Variable Speed Pump with Controller",
       "Filtration": "Dual Jumbo 20\" Housings (20µm Pleated + 5µm Carbon/Sediment)",
-      "UV Unit": "Sterilight 45 LPM UV Chamber"
+      "First Flush": "Dual downpipe first-flush diverters connected to pit"
     },
-    notes: "Main drinking water source. Water is harvested from main roof. Ensure first flush is checked after heavy rain."
+    notes: "Connected and plumbed by Tony Good Plumbing (Invoices INV-1541 & INV-1561). Ensure first flush is drained after heavy coastal rain."
   },
   {
     id: "asset-awts",
     name: "Aerated Wastewater Treatment System (AWTS)",
     category: "wastewater",
-    location: "Lower Yard / Effluent Zone",
-    makeModel: "Taylex / Fuji Clean Secondary Treatment System",
+    location: "Lower Acreage / Effluent Irrigation Zone",
+    makeModel: "Secondary Aerated Wastewater Treatment System",
     serialNumber: "AWTS-77291-C",
     installationDate: "2024-02-10",
     warrantyExpiry: "2039-02-10",
-    manualUrl: "",
+    manualUrl: "https://www.bluengrey.com.au",
     specs: {
-      "Treatment Type": "Continuous Aerobic Secondary Treatment + Chlorination",
-      "Disinfection": "Slow-dissolving Calcium Hypochlorite Chlorine Tablets",
-      "Disposal Area": "Subsurface / dedicated surface drip irrigation line in lower acreage buffer",
-      "Council Req": "Eurobodalla Shire Council quarterly compliance report required"
+      "Service Contractor": "BluenGrey Water & Septic Solutions (10 Page St, Moruya)",
+      "Service Phone": "1300 764 558 / service@bluengrey.com.au",
+      "Service Frequency": "Quarterly (Every 3 months)",
+      "Typical Service Cost": "$125.00 AUD per quarter",
+      "Disinfection": "Calcium Hypochlorite chlorine tablets in feeder tube",
+      "Council Compliance": "Reports submitted directly to Eurobodalla Shire Council"
     },
-    notes: "Never pour bleach, harsh chemicals, or oils down drains. Accredited technician conducts quarterly inspection."
+    notes: "Maintained under scheduled contract by BluenGrey Water & Septic Solutions. They perform quarterly inspections, test chlorine levels, check aeration blower/pumps, and submit reports to Eurobodalla Shire Council."
   },
   {
     id: "asset-fire-pump",
     name: "Dedicated Petrol Bushfire Pump & Hoses",
     category: "bushfire",
     location: "Water Tank Pad / Fire Station",
-    makeModel: "Davey 5.5HP Honda GX160 Twin Impeller Firefighter",
+    makeModel: "Davey Honda GX160 5.5HP Twin Impeller Firefighter",
     serialNumber: "HON-GX160-5592",
     installationDate: "2024-04-01",
     warrantyExpiry: "2027-04-01",
@@ -48,64 +51,65 @@ export const DEFAULT_ASSETS = [
     specs: {
       "Engine": "Honda GX160 4-stroke petrol",
       "Oil Type": "SAE 10W-30 (0.6L capacity)",
-      "Fuel": "Unleaded 91 with fuel stabilizer",
-      "Fittings": "65mm Storz suction coupling + dual 25mm delivery outlets with brass fire nozzles",
-      "Hoses": "2x 30m canvas fire hoses with fire nozzles"
+      "Fuel": "Unleaded 91 with fuel stabilizer (turnover 6-monthly)",
+      "Fittings": "65mm Storz suction coupling + dual 25mm delivery outlets",
+      "Hoses": "2x 30m canvas fire hoses with brass fog/jet nozzles"
     },
-    notes: "Critical bushfire defence asset. Keep fuel fresh (turnover every 6 months). Test run every month on the first weekend."
+    notes: "Crucial bushfire defence asset at Meringo. Servicing and spark plugs supported locally by Moruya Mowers. Test run monthly."
   },
   {
     id: "asset-wood-fire",
     name: "Slow Combustion Wood Fireplace & Flue",
     category: "heating",
     location: "Living Room",
-    makeModel: "Nectre / Scandia Cast Iron Wood Heater",
+    makeModel: "Cast Iron Slow Combustion Wood Heater",
     serialNumber: "WOD-33918-B",
-    installationDate: "2023-06-20",
-    warrantyExpiry: "2033-06-20",
+    installationDate: "2026-07-15",
+    warrantyExpiry: "2036-07-15",
     manualUrl: "",
     specs: {
-      "Flue Type": "6-inch triple skin stainless steel flue kit",
+      "Installed By": "M J Smith Carpentry Services (Michael Smith)",
+      "Flue Type": "6-inch triple skin stainless steel flue kit through roof",
       "Door Seal": "12mm high-temp ceramic glass rope seal",
-      "Baffle Plate": "Heavy duty 6mm steel baffle plate",
-      "Fuel Type": "Seasoned Australian hardwood (ironbark, spotted gum, boxwood)"
+      "Fuel": "Seasoned Australian hardwood (spotted gum, ironbark, box)"
     },
-    notes: "Sweep chimney flue every autumn before winter lighting. Check door seal with paper/dollar bill test."
+    notes: "Installed during renovation by Michael Smith. Sweep chimney flue annually in Autumn before winter lighting."
   },
   {
     id: "asset-ac-splits",
     name: "Reverse-Cycle Air Conditioning (Split Systems)",
     category: "cooling",
     location: "Main Living & Master Bedroom",
-    makeModel: "Daikin Cora Inverter Reverse Cycle (7.1kW Living, 2.5kW Bed)",
+    makeModel: "Daikin Inverter Reverse Cycle Systems",
     serialNumber: "DAIK-CORA-9812",
-    installationDate: "2024-01-15",
-    warrantyExpiry: "2029-01-15",
+    installationDate: "2026-02-25",
+    warrantyExpiry: "2031-02-25",
     manualUrl: "",
     specs: {
+      "Service Contractor": "South Coast Heating and Cooling (Moruya)",
       "Refrigerant": "R32 Eco-Friendly Refrigerant",
-      "Filters": "Washable Catechin Air Purifying Filters",
+      "Filters": "Washable air purifying mesh filters",
       "Outdoor Units": "Anti-corrosion treated fin coils (coastal protection)"
     },
-    notes: "Wash filters in warm soapy water every quarter. Keep garden vegetation 1 metre clear around outdoor compressor units."
+    notes: "Roughed in and serviced by South Coast Heating and Cooling (INV-0472). Wash indoor filters quarterly; rinse outdoor compressor coils of salt spray."
   },
   {
     id: "asset-heat-pump-hw",
     name: "Heat Pump Hot Water System",
     category: "hotwater",
     location: "Southern Exterior Wall",
-    makeModel: "Reclaim Energy / Sanden CO2 Heat Pump (315L Stainless Tank)",
+    makeModel: "High-Efficiency CO2 Heat Pump Hot Water System",
     serialNumber: "HP-315L-4482",
-    installationDate: "2024-03-01",
-    warrantyExpiry: "2034-03-01",
+    installationDate: "2025-06-24",
+    warrantyExpiry: "2035-06-24",
     manualUrl: "",
     specs: {
-      "Refrigerant": "Natural R744 (CO2) - high efficiency in winter",
-      "Tank Material": "Marine-grade 316 Stainless Steel Cylinder",
-      "Relief Valve": "1400 kPa PTR Valve (Expansion control 1200 kPa)",
-      "Controller": "Smart Wi-Fi timer configured for off-peak / solar hours"
+      "Installer": "O'Brien Plumbing Batemans Bay (Invoice 38994)",
+      "Capacity": "315L Marine-Grade Stainless Steel Cylinder",
+      "Relief Valve": "1400 kPa PTR Valve (AS 3500)",
+      "Controller": "Smart timer set for off-peak / solar generation window"
     },
-    notes: "Ease pressure relief valve gently every 6 months. Clean evaporator fins with soft brush or hose."
+    notes: "Installed by O'Brien Plumbing. Ease pressure relief valve every 6 months. Clean evaporator air filter."
   },
   {
     id: "asset-ride-on-mower",
@@ -120,10 +124,10 @@ export const DEFAULT_ASSETS = [
     specs: {
       "Engine": "Briggs & Stratton / Kohler 22HP V-Twin",
       "Oil Capacity": "1.8L (10W-30 Synthetic)",
-      "Cutting Deck": "42-inch reinforced stamped steel deck with mulch plug",
-      "Blades": "High-lift mulching/slashing blades (Set of 2)"
+      "Deck": "42-inch reinforced stamped steel cutting deck",
+      "Local Dealer": "Moruya Mowers & Power Equipment"
     },
-    notes: "Essential for managing 2-acre lawn and asset protection zone. Wash deck after every use to prevent coastal rust."
+    notes: "Essential for managing 2-acre lawn and bushfire asset protection zone. Service engine every 25-50 hours."
   },
   {
     id: "asset-brushcutter-chainsaw",
@@ -136,62 +140,80 @@ export const DEFAULT_ASSETS = [
     warrantyExpiry: "2026-06-01",
     manualUrl: "",
     specs: {
-      "Fuel": "50:1 2-Stroke Premix (Stihl HP Ultra Synthetic Oil)",
-      "Chainsaw Chain": ".325\" pitch, 0.050\" gauge, 18-inch bar",
-      "Brushcutter Head": "Autocut 25-2 with 2.7mm quiet line + 3-tooth metal grass blade"
+      "Fuel Mix": "50:1 2-Stroke Premix (Stihl HP Ultra Synthetic Oil)",
+      "Chainsaw Bar": "18-inch bar, .325\" pitch chain",
+      "Local Dealer": "Moruya Mowers (Stihl Dealer)"
     },
-    notes: "Keep chains sharp with 4.8mm file. Empty fuel or use stabilizer if stored for more than 2 months."
+    notes: "Keep chains sharp with 4.8mm file. Always use fresh 2-stroke fuel."
   },
   {
     id: "asset-decks-verandas",
     name: "Hardwood Timber Decks & Verandas",
     category: "house",
     location: "North & East Verandas",
-    makeModel: "Spotted Gum 140x25mm Decking on Galvanised / Hardwood Substructure",
+    makeModel: "Spotted Gum 140x25mm Decking on Galvanised Steel Substructure",
     serialNumber: "N/A",
-    installationDate: "2023-11-01",
+    installationDate: "2026-05-30",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Area": "Approximately 85 square metres of undercover & exposed decking",
-      "Finish": "Intergrain UltraDeck / Cutek CD50 High-Durability Timber Oil",
-      "Fasteners": "Grade 316 Marine Stainless Steel Screws"
+      "Builder": "M J Smith Carpentry Services (Michael Smith, 0452 483 487)",
+      "Area": "Approximately 85 sq metres of veranda and alfresco decking",
+      "Timber": "Spotted Gum Australian hardwood (North Eden Timber)",
+      "Finish": "Cutek CD50 / Intergrain penetrating timber decking oil"
     },
-    notes: "Coastal salt and UV degrade timber quickly. Wash down salt spray quarterly; apply fresh oil coat every 12 to 18 months."
+    notes: "Constructed by Michael Smith. Coastal UV and salt spray degrade timber quickly; wash quarterly and re-oil annually in Autumn."
+  },
+  {
+    id: "asset-pest-barrier",
+    name: "Termite & Pest Barrier System",
+    category: "house",
+    location: "Subfloor & House Perimeter",
+    makeModel: "Perimeter Termite Barrier & Subfloor Bait Stations",
+    serialNumber: "JOB-02168",
+    installationDate: "2025-07-28",
+    warrantyExpiry: "Annual Inspection Required",
+    manualUrl: "",
+    specs: {
+      "Pest Inspector": "Bates Pest Control (Myrle Payne, 0428 711 701)",
+      "Location": "Batehaven NSW 2536",
+      "Standard": "Australian Standard AS 3660.2 Timber Pest Inspection"
+    },
+    notes: "Annual inspection and monitoring by Bates Pest Control (Invoice 02168). Inspect ant capping, subfloor weepholes, and roof void."
   },
   {
     id: "asset-orchard-veggie",
     name: "Fruit Orchard & Raised Veggie Beds",
     category: "garden",
     location: "Northern Garden Enclosure",
-    makeModel: "Enclosed Orchard (Citrus, Stone Fruit, Apples) & 4x Colourbond Raised Beds",
+    makeModel: "Enclosed Orchard (Citrus, Stone Fruit) & Raised Beds",
     serialNumber: "N/A",
     installationDate: "2024-07-01",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Trees": "Meyer Lemon, Tahitian Lime, Eureka Lemon, Fuyu Persimmon, Hass Avocado, 2x Apples",
-      "Irrigation": "Netafim pressure-compensating drip line on digital tap timer",
-      "Netting": "Wildlife-safe 2mm exclusion netting for fruit fly & bird protection"
+      "Supplies": "Moruya Ag Horse & Pet (fertilizers, potting mix, netting)",
+      "Trees": "Meyer Lemon, Tahitian Lime, Eureka Lemon, Persimmon, Avocado, Apples",
+      "Irrigation": "Drip line on digital tap timer"
     },
-    notes: "Winter fruit tree pruning, spring fertilising with organic citrus food, regular fruit fly baiting."
+    notes: "Winter pruning, spring citrus food, and Queensland fruit fly lure traps hung in early Spring."
   },
   {
     id: "asset-chicken-coop",
     name: "Chicken Coop & Run",
     category: "garden",
     location: "Orchard Rear",
-    makeModel: "Heavy Duty Predator-Proof Timber & Fox-Wire Hen House",
+    makeModel: "Heavy Duty Predator-Proof Hen House & Fox Wire",
     serialNumber: "N/A",
     installationDate: "2024-08-15",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Flock": "6x Isa Brown / Australorp laying hens",
-      "Wire": "1.2mm galvanised fox wire with 450mm buried apron skirt",
+      "Supplies & Feed": "Moruya Ag Horse & Pet (Vulcan St, Moruya)",
+      "Wire": "1.2mm galvanised fox wire with buried apron skirt",
       "Door": "Automatic light-sensor predator security door"
     },
-    notes: "Clean out pine shavings/straw to compost monthly; check predator wire perimeter."
+    notes: "Clean out straw monthly; check predator wire skirt for fox digging."
   },
   {
     id: "asset-gutters-ember",
@@ -200,13 +222,13 @@ export const DEFAULT_ASSETS = [
     location: "House & Shed Rooflines",
     makeModel: "Colorbond Quad Gutters + Aluminium Leaf Stopper 2mm Ember Mesh",
     serialNumber: "N/A",
-    installationDate: "2023-10-01",
+    installationDate: "2026-06-26",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Mesh Material": "Non-combustible aluminium ember mesh (CSIRO fire tested)",
-      "Downpipe Outlets": "Leaf deflector diverters on all 6 downpipes"
+      "Material": "CSIRO fire-tested non-combustible aluminium ember mesh",
+      "Downpipe Outlets": "Leaf deflector diverters connected to rainwater tanks"
     },
-    notes: "Crucial bushfire maintenance. Keep all roof valleys, gutters, and downpipe screens clear of gum leaves."
+    notes: "Crucial bushfire maintenance. Keep all roof valleys, gutters, and downpipes clear of gum leaves before bushfire season."
   }
 ];
