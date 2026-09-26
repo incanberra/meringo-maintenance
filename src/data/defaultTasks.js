@@ -480,26 +480,48 @@ export const DEFAULT_TASKS = [
 
   // --- HOUSE & DECKS ---
   {
-    id: "task-decks-oiling",
-    title: "Spotted Gum Verandas & Decks Clean & Re-Oil",
+    id: "task-front-deck-oil",
+    title: "Front Deck (Merbau) Clean & Re-Oil",
     category: "house",
-    assetId: "asset-decks-verandas",
+    assetId: "asset-front-deck",
     frequency: "annual",
     intervalMonths: 12,
     dueDate: getRelativeDate(90),
     lastCompletedDate: getRelativeDate(-275),
     seasonalTiming: "autumn",
-    estimatedMinutes: 240,
+    estimatedMinutes: 180,
     difficulty: "moderate",
     preferredTrade: "DIY / M J Smith Carpentry",
     checklist: [
-      "Move outdoor furniture and BBQ off timber decks",
-      "Clean decking boards with sodium percarbonate / deck cleaner to remove dirt and coastal salt residue",
-      "Allow 48 hours for timber to dry thoroughly",
-      "Apply 1-2 generous coats of penetrating decking oil (e.g. Cutek CD50 or Intergrain) with lamb's wool applicator",
-      "Wipe off any excess unabsorbed oil after 30 minutes to prevent tacky finish"
+      "Move outdoor furniture and pots off front Merbau deck",
+      "Clean decking boards with sodium percarbonate / deck cleaner to remove coastal grime and salt",
+      "Allow 48 hours for Merbau timber to dry thoroughly",
+      "Apply 1-2 thin coats of penetrating Merbau timber decking oil (Cutek CD50 or Intergrain) with lamb's wool applicator",
+      "Wipe off any excess unabsorbed oil after 30 minutes to prevent a tacky finish"
     ],
-    notes: "Spotted gum deck built by Michael Smith (MJ Smith Carpentry). Annual re-oiling protects timber against coastal UV and salt spray."
+    notes: "Front deck is Merbau. Annual re-oiling protects timber against coastal UV bleaching and salt air."
+  },
+  {
+    id: "task-rear-deck-inspect",
+    title: "Rear Deck (Blackbutt) Structural Rot & Integrity Check",
+    category: "house",
+    assetId: "asset-rear-deck",
+    frequency: "biannual",
+    intervalMonths: 6,
+    dueDate: getRelativeDate(30),
+    lastCompletedDate: getRelativeDate(-150),
+    seasonalTiming: "all-year",
+    estimatedMinutes: 45,
+    difficulty: "moderate",
+    preferredTrade: "DIY / M J Smith Carpentry (Michael Smith)",
+    checklist: [
+      "Walk entire rear Blackbutt deck checking for springy boards, soft rot, or splintering",
+      "Inspect underside bearers, joists, and ledger connections for moisture entrapment and fungal decay",
+      "Test deteriorating boards with a small probe for hidden rot pockets",
+      "Mark hazardous or loose boards requiring immediate replacement",
+      "Consult Michael Smith (0452 483 487) to schedule replacement boards or complete deck rebuild"
+    ],
+    notes: "Rear Blackbutt deck is deteriorating. Regular safety and rot monitoring is essential until repaired or rebuilt."
   },
   {
     id: "task-termite-inspection",
@@ -525,9 +547,9 @@ export const DEFAULT_TASKS = [
   },
   {
     id: "task-coastal-salt-washdown",
-    title: "Exterior Cladding & Window Track Salt Spray Washdown",
+    title: "Exterior Cladding, Decks & Window Track Salt Spray Washdown",
     category: "house",
-    assetId: "asset-decks-verandas",
+    assetId: "asset-front-deck",
     frequency: "quarterly",
     intervalMonths: 3,
     dueDate: getRelativeDate(5),
@@ -538,54 +560,56 @@ export const DEFAULT_TASKS = [
     preferredTrade: "DIY",
     checklist: [
       "Hose down exterior cladding, window screens, and soffits with fresh tank water",
+      "Rinse salt accumulation off front Merbau deck and rear Blackbutt deck",
       "Vacuum and wipe coastal grit out of aluminium sliding door and window tracks",
       "Lubricate window hinges and stainless door latches with dry PTFE spray (avoid sticky grease)"
     ],
-    notes: "Extends life of powdercoated aluminium and prevents lock mechanisms jamming from salt air."
+    notes: "Extends life of powdercoated aluminium, decks, and prevents lock mechanisms jamming from salt air."
   },
 
   // --- GARDEN & VEGGIES ---
   {
-    id: "task-orchard-fruit-fly",
-    title: "Fruit Orchard Pruning, Feeding & Fruit Fly Traps",
+    id: "task-citrus-care",
+    title: "Lemon & Mandarin Trees Fertilising, Pruning & Fruit Fly Care",
     category: "garden",
-    assetId: "asset-orchard-veggie",
+    assetId: "asset-citrus-veggie",
     frequency: "seasonal",
     intervalMonths: 3,
     dueDate: getRelativeDate(11),
     lastCompletedDate: getRelativeDate(-79),
     seasonalTiming: "spring",
-    estimatedMinutes: 90,
+    estimatedMinutes: 60,
     difficulty: "easy",
     preferredTrade: "DIY / Moruya Ag",
     checklist: [
-      "Feed citrus and deciduous trees with pelletized organic poultry manure and trace elements (from Moruya Ag)",
-      "Hang fresh Queensland Fruit Fly (Qfly) pheromone lures in lemon, lime, and stone fruit trees",
-      "Inspect drip irrigation line emitters; run manual 10-minute test cycle",
-      "Top up compost / sugarcane mulch around drip-line (keep 10cm clear of tree trunks)"
+      "Feed lemon and mandarin trees with organic citrus fertiliser (from Moruya Ag)",
+      "Check for citrus leafminer, bronze orange bugs, or scale; spray with eco-oil if needed",
+      "Hang fresh Queensland Fruit Fly (Qfly) pheromone lures in lemon and mandarin canopies",
+      "Inspect and run drip irrigation lines to citrus trees",
+      "Top up mulch layer around tree drip line, keeping 10cm clear of trunks"
     ],
-    notes: "Supplies from Moruya Ag Horse & Pet (Vulcan St Moruya). Hang traps by early spring before fruit develops colour."
+    notes: "Maintains healthy lemon and mandarin citrus harvest. Fertilise in early Spring and late Summer."
   },
   {
-    id: "task-chicken-coop-clean",
-    title: "Chicken Coop Deep Clean, Straw Refresh & Predator Check",
+    id: "task-veggie-beds",
+    title: "Vegetable Garden Bed Refresh, Compost & Seasonal Planting",
     category: "garden",
-    assetId: "asset-chicken-coop",
-    frequency: "monthly",
-    intervalMonths: 1,
-    dueDate: getRelativeDate(4),
-    lastCompletedDate: getRelativeDate(-26),
-    seasonalTiming: "all-year",
-    estimatedMinutes: 45,
+    assetId: "asset-citrus-veggie",
+    frequency: "seasonal",
+    intervalMonths: 3,
+    dueDate: getRelativeDate(20),
+    lastCompletedDate: getRelativeDate(-70),
+    seasonalTiming: "spring",
+    estimatedMinutes: 90,
     difficulty: "easy",
-    preferredTrade: "DIY / Moruya Ag",
+    preferredTrade: "DIY",
     checklist: [
-      "Shovel out soiled straw/bedding directly to vegetable garden compost heap",
-      "Sprinkle diatomaceous earth on roosting perches and nesting boxes for mite prevention",
-      "Add fresh pine shavings or clean straw (from Moruya Ag) to nest boxes",
-      "Inspect exterior predator wire skirt around coop perimeter for fox digging signs",
-      "Test automatic light-sensor door battery and ensure smooth sliding track"
+      "Clear spent vegetable crops and weed raised garden beds",
+      "Dig in compost and organic soil conditioner (from Moruya Ag)",
+      "Test irrigation drip emitters across all raised beds",
+      "Mulch beds with sugar cane or pea straw to conserve moisture",
+      "Sow seasonal vegetables suited to the South Coast coastal climate"
     ],
-    notes: "Feed and pine shavings sourced from Moruya Ag Horse & Pet. Foxes are active in the coastal bush."
+    notes: "Manage raised vegetable garden beds seasonally. (Note: no poultry on property)."
   }
 ];

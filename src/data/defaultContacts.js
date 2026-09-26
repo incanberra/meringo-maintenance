@@ -42,7 +42,7 @@ export const DEFAULT_CONTACTS = [
     phone: "0452 483 487",
     email: "mjsmith.carpentryservices@gmail.com",
     address: "Moruya & Eurobodalla NSW",
-    notes: "Primary builder for Meringo renovation: constructed spotted gum timber decks, piers, structural framing, wood heater flue installation, stairs, and door alterations."
+    notes: "Primary builder for Meringo renovation: constructed timber decks (front Merbau, rear Blackbutt), piers, structural framing, wood heater flue installation, stairs, and door alterations."
   },
   {
     id: "contact-heating-cooling",
@@ -69,7 +69,7 @@ export const DEFAULT_CONTACTS = [
     phone: "(02) 4474 2275",
     email: "sales@moruyaag.com.au",
     address: "49 Vulcan St, Moruya NSW 2537",
-    notes: "Supplied farm gate posts, agricultural fencing, and acreage supplies for 1137 Congo Rd (Invoices 84016810, 84017102). Stockist for chicken feeds and pasture care."
+    notes: "Supplied farm gate posts, agricultural fencing, and acreage supplies for 1137 Congo Rd (Invoices 84016810, 84017102). Stockist for citrus fertilisers, vegetable garden compost, and pasture care."
   },
   {
     id: "contact-council",

@@ -15,14 +15,14 @@ Hosted directly on **GitHub Pages**, it runs **local-first** with zero initial c
    - Quick "Snooze" actions (+1 week or +1 month).
 
 2. **Pre-Configured Property Systems & Appliances**
-   - **Water & Pumps**: Rainwater tanks (45,000L), inlet leaf strainers, first-flush diverters, household pressure pump, and whole-house 20" jumbo sediment/carbon filters.
-   - **Wastewater**: Aerated Wastewater Treatment System (AWTS - Taylex/Fuji Clean) with quarterly council compliance inspection routines, monthly chlorine tablet dispenser checks, and paddock irrigation line inspections.
-   - **Bushfire Readiness**: Dedicated Honda GX160 petrol fire pump (monthly test-run & 6-month fuel turnover), fire hose reels & Storz couplings, roof gutter & ember guard cleaning, and 20m Asset Protection Zone (APZ) slashing.
+   - **Water & Pumps**: Rainwater tanks (4x 22,500L poly tanks = 90,000L total capacity connected via manifold balancing valves, plumbed by Tony Good Plumbing), leaf strainers, first-flush diverters, pressure pump (no filtration installed yet).
+   - **Wastewater**: Aerated Wastewater Treatment System (AWTS) maintained by BluenGrey Water & Septic Solutions with quarterly council compliance servicing, chlorine tablet checks, and surface irrigation inspections.
+   - **Bushfire Readiness**: Dedicated Honda GX160 petrol fire pump (monthly test-run & fuel turnover), fire hose reels, roof gutter & ember guard cleaning, and Asset Protection Zone (APZ) slashing.
    - **Heating & Cooling**: Slow-combustion wood heater (autumn chimney flue sweeping, door rope seal test), and Daikin reverse-cycle air conditioner filter washing and outdoor coil salt-washdown.
    - **Hot Water**: Heat pump hot water system (6-monthly PTR pressure relief valve ease test, air filter and evaporator fin cleaning, sacrificial anode inspection).
    - **Machinery & Grounds**: 42" Ride-on lawn mower / slasher (engine oil, deck scraping, blade sharpening), Stihl brushcutter & chainsaw maintenance.
-   - **House & Decks**: Spotted gum hardwood timber veranda oiling/staining, annual termite barrier inspection (AS 3660), and quarterly coastal salt spray washdown.
-   - **Garden & Orchard**: Fruit orchard winter pruning & Queensland fruit fly lures, chicken coop deep clean & predator wire checks.
+   - **House & Decks**: Front Merbau deck annual cleaning & re-oiling, rear deteriorating Blackbutt deck 6-monthly rot/structural integrity inspections & rebuild planning, annual Bates Pest Control termite inspection (AS 3660), and quarterly coastal salt spray washdown.
+   - **Garden & Citrus**: Lemon & mandarin citrus trees seasonal fertilising (organic citrus food), pruning, pest/fruit fly lures, and raised vegetable garden bed compost & planting.
 
 3. **Asset & Appliance Dossier**
    - Make, model, serial numbers, warranty dates, location on property, and detailed specifications (e.g., filter cartridge sizes, engine oil grades, spark plug codes, fuel mix ratios).

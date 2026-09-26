@@ -148,22 +148,39 @@ export const DEFAULT_ASSETS = [
     notes: "Keep chains sharp with 4.8mm file. Always use fresh 2-stroke fuel."
   },
   {
-    id: "asset-decks-verandas",
-    name: "Hardwood Timber Decks & Verandas",
+    id: "asset-front-deck",
+    name: "Front Deck (Merbau)",
     category: "house",
-    location: "North & East Verandas",
-    makeModel: "Spotted Gum 140x25mm Decking on Galvanised Steel Substructure",
+    location: "Front Entrance & North Veranda",
+    makeModel: "Merbau Hardwood Decking on Substructure",
     serialNumber: "N/A",
-    installationDate: "2026-05-30",
+    installationDate: "2024-01-01",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Builder": "M J Smith Carpentry Services (Michael Smith, 0452 483 487)",
-      "Area": "Approximately 85 sq metres of veranda and alfresco decking",
-      "Timber": "Spotted Gum Australian hardwood (North Eden Timber)",
-      "Finish": "Cutek CD50 / Intergrain penetrating timber decking oil"
+      "Timber Type": "Merbau Hardwood (Kwila)",
+      "Finish": "Cutek CD50 / Intergrain Merbau penetrating decking oil",
+      "Fasteners": "Stainless steel decking screws"
     },
-    notes: "Constructed by Michael Smith. Coastal UV and salt spray degrade timber quickly; wash quarterly and re-oil annually in Autumn."
+    notes: "Front deck is Merbau hardwood. Wash down coastal salt spray quarterly; apply fresh penetrating Merbau oil coat every 12 to 18 months."
+  },
+  {
+    id: "asset-rear-deck",
+    name: "Rear Deck (Deteriorating Blackbutt)",
+    category: "house",
+    location: "Rear Veranda & House Access",
+    makeModel: "Blackbutt Hardwood Decking (Aging / Deteriorating)",
+    serialNumber: "N/A",
+    installationDate: "Provisional",
+    warrantyExpiry: "Requires Restoration",
+    manualUrl: "",
+    specs: {
+      "Timber Type": "Blackbutt Hardwood",
+      "Current Condition": "Deteriorating — inspect for rot, soft spots, and loose boards",
+      "Builder Contact": "M J Smith Carpentry Services (Michael Smith, 0452 483 487)",
+      "Action Required": "Regular structural checks; evaluate board replacement vs rebuilding"
+    },
+    notes: "Rear Blackbutt deck is showing signs of deterioration. Conduct 6-monthly inspections for soft rot and board safety. Plan restorative treatment or rebuild with Michael Smith."
   },
   {
     id: "asset-pest-barrier",
@@ -183,38 +200,21 @@ export const DEFAULT_ASSETS = [
     notes: "Annual inspection and monitoring by Bates Pest Control (Invoice 02168). Inspect ant capping, subfloor weepholes, and roof void."
   },
   {
-    id: "asset-orchard-veggie",
-    name: "Fruit Orchard & Raised Veggie Beds",
+    id: "asset-citrus-veggie",
+    name: "Citrus Trees (Lemon & Mandarin) & Vegetable Garden",
     category: "garden",
-    location: "Northern Garden Enclosure",
-    makeModel: "Enclosed Orchard (Citrus, Stone Fruit) & Raised Beds",
+    location: "Garden & House Surrounds",
+    makeModel: "Productive Lemon & Mandarin Trees + Vegetable Garden Beds",
     serialNumber: "N/A",
-    installationDate: "2024-07-01",
+    installationDate: "Established",
     warrantyExpiry: "N/A",
     manualUrl: "",
     specs: {
-      "Supplies": "Moruya Ag Horse & Pet (fertilizers, potting mix, netting)",
-      "Trees": "Meyer Lemon, Tahitian Lime, Eureka Lemon, Persimmon, Avocado, Apples",
-      "Irrigation": "Drip line on digital tap timer"
+      "Fruit Trees": "Lemon and Mandarin citrus varieties",
+      "Garden Beds": "Vegetable garden beds on drip irrigation",
+      "Fertiliser & Supplies": "Moruya Ag Horse & Pet (organic citrus food, compost, mulch)"
     },
-    notes: "Winter pruning, spring citrus food, and Queensland fruit fly lure traps hung in early Spring."
-  },
-  {
-    id: "asset-chicken-coop",
-    name: "Chicken Coop & Run",
-    category: "garden",
-    location: "Orchard Rear",
-    makeModel: "Heavy Duty Predator-Proof Hen House & Fox Wire",
-    serialNumber: "N/A",
-    installationDate: "2024-08-15",
-    warrantyExpiry: "N/A",
-    manualUrl: "",
-    specs: {
-      "Supplies & Feed": "Moruya Ag Horse & Pet (Vulcan St, Moruya)",
-      "Wire": "1.2mm galvanised fox wire with buried apron skirt",
-      "Door": "Automatic light-sensor predator security door"
-    },
-    notes: "Clean out straw monthly; check predator wire skirt for fox digging."
+    notes: "Regular citrus fertilising in Spring and late Summer with organic citrus food; fruit fly monitoring lures; seasonal vegetable planting."
   },
   {
     id: "asset-gutters-ember",
