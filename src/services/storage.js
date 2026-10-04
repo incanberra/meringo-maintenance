@@ -4,10 +4,10 @@ import { DEFAULT_CONTACTS } from '../data/defaultContacts.js';
 import { calculateNextDueDate } from './dateUtils.js';
 
 const STORAGE_KEYS = {
-  ASSETS: 'meringo_assets_v4',
-  TASKS: 'meringo_tasks_v4',
-  LOGS: 'meringo_logs_v4',
-  CONTACTS: 'meringo_contacts_v4',
+  ASSETS: 'meringo_assets_v5',
+  TASKS: 'meringo_tasks_v5',
+  LOGS: 'meringo_logs_v5',
+  CONTACTS: 'meringo_contacts_v5',
   SETTINGS: 'meringo_settings_v1',
 };
 

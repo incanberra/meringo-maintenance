@@ -332,7 +332,7 @@ export const DEFAULT_TASKS = [
     seasonalTiming: "all-year",
     estimatedMinutes: 30,
     difficulty: "easy",
-    preferredTrade: "DIY / South Coast Heating & Cooling",
+    preferredTrade: "DIY / South Coast Heating & Cooling (Myles)",
     checklist: [
       "Pop open front grille of living room and bedroom indoor split units",
       "Slide out mesh dust filter screens",
@@ -340,7 +340,7 @@ export const DEFAULT_TASKS = [
       "Allow filters to air dry completely in shade before reinstalling",
       "Wipe indoor louvres and wipe dust sensor"
     ],
-    notes: "Servicing supported by South Coast Heating and Cooling (Moruya, INV-0472)."
+    notes: "Servicing supported by South Coast Heating and Cooling (Myles, Moruya, INV-0472)."
   },
   {
     id: "task-ac-outdoor-coils",

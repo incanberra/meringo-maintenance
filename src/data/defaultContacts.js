@@ -46,12 +46,12 @@ export const DEFAULT_CONTACTS = [
   },
   {
     id: "contact-heating-cooling",
-    name: "South Coast Heating and Cooling",
+    name: "South Coast Heating and Cooling (Myles)",
     trade: "Air Conditioning & Heat Pumps",
     phone: "(02) 4474 3666",
     email: "info@southcoastheatingcooling.com.au",
     address: "Moruya NSW 2537",
-    notes: "Handled air conditioning rough-in and split system installation at Meringo (Invoice INV-0472)."
+    notes: "Contact: Myles. Handled air conditioning rough-in and split system installation at Meringo (Invoice INV-0472)."
   },
   {
     id: "contact-mower",

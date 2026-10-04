@@ -87,12 +87,12 @@ export const DEFAULT_ASSETS = [
     warrantyExpiry: "2031-02-25",
     manualUrl: "",
     specs: {
-      "Service Contractor": "South Coast Heating and Cooling (Moruya)",
+      "Service Contractor": "South Coast Heating and Cooling (Myles, Moruya)",
       "Refrigerant": "R32 Eco-Friendly Refrigerant",
       "Filters": "Washable air purifying mesh filters",
       "Outdoor Units": "Anti-corrosion treated fin coils (coastal protection)"
     },
-    notes: "Roughed in and serviced by South Coast Heating and Cooling (INV-0472). Wash indoor filters quarterly; rinse outdoor compressor coils of salt spray."
+    notes: "Roughed in and serviced by South Coast Heating and Cooling (Myles, INV-0472). Wash indoor filters quarterly; rinse outdoor compressor coils of salt spray."
   },
   {
     id: "asset-heat-pump-hw",
